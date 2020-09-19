@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace WishList.Controllers
 {
@@ -13,12 +12,12 @@ namespace WishList.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
-            return View("Views/Index.cshtml");
+            return View("Index");
         }
 
         public IActionResult Error()
         {
-            return View("Views/Shared/Error.cshtml"); 
+            return View("Error"); 
         }
     }
 }
