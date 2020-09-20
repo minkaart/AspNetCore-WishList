@@ -28,13 +28,15 @@ namespace WishList.Controllers
             return View("Create"); 
         }
 
-        [HttpPost]
-        public IActionResult Create(Item item)
-        {
-            _context.Items += item;
-            item.SaveChanges();
-            RedirectToAction("Index"); 
-        }
+        
+
+//[HttpPost]
+        //public IActionResult Create(Item item)
+        //{
+        //    _context.Items += item;
+        //    item.SaveChanges();
+        //    RedirectToAction("Index");
+        //}
 
 
     }
