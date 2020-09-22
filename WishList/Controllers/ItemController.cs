@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using WishList.Data; 
 
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace WishList.Controllers
 {
@@ -20,7 +19,7 @@ namespace WishList.Controllers
         public IActionResult Index()
         {
             var model = _context.Items.ToList();
-            return View("Item/Index", model); 
+            return View("Index", model);
         }
 
         [HttpGet]

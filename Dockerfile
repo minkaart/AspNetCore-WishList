@@ -16,4 +16,5 @@ USER projects
 
 RUN dotnet build
 
-ENTRYPOINT ["/bin/sh"]
+#ENTRYPOINT ["/bin/sh"]
+CMD ASPNETCORE_URLS=http://*:$PORT dotnet HerokuApp.dll
